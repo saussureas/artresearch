@@ -1,0 +1,56 @@
+body {
+	background-color: #FFFFFF;
+    color: #571212;
+    font-family: Verdana, Arial, Sans-Serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.site-header {
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;   /* vertical alignment */
+  justify-content: center; /* keeps whole thing centered horizontally */
+  gap: 10px;
+  padding: 10px;
+}
+
+.logo {
+  width: 60px;   /* adjust size */
+  height: auto;
+}
+
+.site-name {
+  font-size: 24px;
+}
+
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #571212;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #ffffff;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #ffffff;
+  color: #571212;
+}
+
+main {
+  /* max-width, margin, padding */
+max-width: 800px;
+margin: 0 auto;
+padding: 20px
+}

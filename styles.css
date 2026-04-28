@@ -1,0 +1,62 @@
+    /* Terminal background and font */
+body {
+  background-color: #FFFFFF;
+  color: #571212;
+  font-family: Verdana, Arial, Sans-Serif;
+  height: 100vh;
+  margin: 0;
+}
+
+.terminal-container {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  margin-top: 30px; /* increase space above search box */
+}
+
+.search-box input {
+  padding: 10px;
+  width: 60%;
+  background-color: #E9E3E3;
+  color: #000000;
+  border: 1px solid #571212;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #E9E3E3;
+  color: #571212;
+  border: 1px solid #571212;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #571212;
+  color: #FFFFFF;
+}
+
+.results {
+  margin-top: 20px;
+  text-align: left;
+  min-height: 100px;
+}
+
+
+.log-title {
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.log-content {
+  margin: 0 0 15px 0;
+  white-space: pre-wrap;
+}

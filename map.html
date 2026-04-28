@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>...</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesnorm.css">
+  <style>
+
+.container {
+  max-width: 800px;
+  margin: 1in auto;
+  padding: 0 20px;
+}
+
+#map {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+  </style>
+  
+</head>
+
+<body>
+<!-- HEADER -->
+<header class="site-header">
+  <img src="https://i.imgur.com/2T0PCP6.png" alt="Site Logo" class="logo">
+  <span class="site-name"><b>Paranormal Research and Investigation Agency</b></span>
+</header>
+
+<ul class="topnav">
+  <li><a href="portal.html">Home</a></li>
+  <li><a href="acc_details.html">Account Details</a></li>
+  <li><a href="map.html">Occurence Map</a></li>
+  <li><a href="database.html">Files Database</a></li>
+  <li><a href="logs.html">Update Logs</a></li>
+  <li><a href="forum.html">Forum</a></li>
+</ul>
+<!-- copypaste until here -->
+
+<main>
+<h3><center>OCCURENCE MAP</center></h3>
+<p><center>*NOTICE: Map update schedule moved to Tuesdays 17:00 starting March 2026.</center></p>
+</main>
+
+<div class="container"; id="map"></div>
+
+<script>
+  function initMap() {
+    // Center map (Manila)
+    const center = { lat: 14.5995, lng: 120.9842 };
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 12,
+      center: center,
+    });
+
+    // Locations array
+  const locations = [
+    {
+      position: { lat: 14.550548096573538, lng: 120.98193884816897},
+      title: "Manila Film Center",
+      description: "view file",
+      url: "https://www.screenwritersnetwork.org/wp-content/uploads/2021/08/Bee-Movie-2007.pdf"
+    },
+    {
+      position: { lat: 11.952321263032278, lng: 124.76985718073985},
+      title: "Biringan City",
+      description: "view file",
+      url: "biringancity_file.html"
+    },
+    {
+      position: { lat: 14.619839474619944, lng: 121.03778473948356},
+      title: "White Lady",
+      description: "view file",
+      url: "biringancity_file.html"
+    },
+    {
+      position: { lat: 10.66422598543291, lng: 122.32471370366612},
+      title: "Guimbal Vanishing Mansion",
+      description: "view file",
+      url: "biringancity_file.html"
+    },
+    {
+      position: { lat: 14.653872320131134, lng: 121.06845821143217},
+      title: "UP Diliman Spirits",
+      description: "view file",
+      url: "biringancity_file.html"
+    }
+  ];
+
+    // Add markers
+    locations.forEach(loc => {
+    const marker = new google.maps.Marker({
+      position: loc.position,
+      map: map,
+      title: loc.title,
+    });
+
+    const infoWindow = new google.maps.InfoWindow({
+    content: `
+      <div style="max-width:200px">
+        <h3>${loc.title}</h3>
+        <h4 style="margin:0;">
+        <a href="${loc.url}" target="_blank">
+          ${loc.description}
+        </a>
+        </h4>
+      </div>
+    `
+    });
+      
+      const bounds = new 		google.maps.LatLngBounds();
+locations.forEach(loc => bounds.extend(loc.position));
+map.fitBounds(bounds);
+
+      marker.addListener("click", () => {
+        infoWindow.open(map, marker);
+      });
+    });
+  }
+</script>
+
+<!-- Replace with actual key -->
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLATsQ7gW_PBugZW_PgVqsEDvOZwEcNkI&callback=initMap">
+</script>
+
+</body>
+</html>
