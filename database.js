@@ -12,7 +12,7 @@ const searchInput = document.getElementById("searchInput");
 const resultsDiv = document.getElementById("results");
 
 searchBtn.addEventListener("click", () => {
-  const query = searchInput.value.trim().toUpperCase();
+  const query = searchInput.value.trim();
   resultsDiv.innerHTML = "";
 
   if (!query) return;
