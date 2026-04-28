@@ -1,4 +1,4 @@
-// files with page links
+// files with page links.
 const logs = [
   { code: "TWFuaWxhIEZpbG0gQ2VudGVy", title: "Manila Film Center", page: "Manila_Film_Center.pdf" },
   { code: "QmlyaW5nYW4gQ2l0eQ==", title: "Biringan City", page: "Biringan_City.pdf" },
