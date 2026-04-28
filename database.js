@@ -1,10 +1,10 @@
 // files with page links
 const logs = [
-  { code: "TWFuaWxhIEZpbG0gQ2VudGVy", title: "Manila Film Center", page: "log001.html" },
-  { code: "QmlyaW5nYW4gQ2l0eQ==", title: "Biringan City", page: "log002.html" },
-  { code: "V2hpdGUgTGFkeQ==", title: "White Lady", page: "log003.html" },
-  { code: "R3VpbWJhbCBWYW5pc2hpbmcgTWFuc2lvbg==", title: "Guimbal Vanishing Mansion", page: "log004.html" }
-  { code: "VVAgRGlsaW1hbiBTcGlyaXRz", title: "UP Diliman Spirits", page: "log003.html" }
+  { code: "TWFuaWxhIEZpbG0gQ2VudGVy", title: "Manila Film Center", page: "Manila_Film_Center.pdf" },
+  { code: "QmlyaW5nYW4gQ2l0eQ==", title: "Biringan City", page: "Biringan_City.pdf" },
+  { code: "V2hpdGUgTGFkeQ==", title: "White Lady", page: "White_Lady.pdf" },
+  { code: "R3VpbWJhbCBWYW5pc2hpbmcgTWFuc2lvbg==", title: "Guimbal Vanishing Mansion", page: "Guimbal_Vanishing_Mansion.pdf" },
+  { code: "VVAgRGlsaW1hbiBTcGlyaXRz", title: "UP Diliman Spirits", page: "UP_Diliman_Spirits.pdf" }
 ];
 
 const searchBtn = document.getElementById("searchBtn");
